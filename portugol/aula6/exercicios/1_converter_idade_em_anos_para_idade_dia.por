@@ -29,7 +29,7 @@ programa
 		limpa()
 
 		// coleta de dados do aniversario do usuario
-		separador()
+		separador()		
 		escreva("primeira coleta efetuada com sucesso, por favor insera agora os dados de usuario")
 		separador()
 		escreva("qual o dia do seu aniversario? (resposta em numero de 1 a 31): ")
@@ -72,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 130; 
+ * @POSICAO-CURSOR = 1715; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

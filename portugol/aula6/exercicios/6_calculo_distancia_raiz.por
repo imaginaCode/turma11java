@@ -39,8 +39,8 @@ programa
 		limpa()
 
 		// processamento
-
-		d = mat.raiz(((x2-x1)^2+(y2-y1)^2), 2)
+		
+		d = mat.raiz((mat.potencia((x2-x1),2) + mat.potencia((y2-y1),2)), 2)
 
 		// report final
 
@@ -55,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 732; 
+ * @POSICAO-CURSOR = 1164; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

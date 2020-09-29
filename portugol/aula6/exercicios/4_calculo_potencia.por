@@ -22,6 +22,8 @@ programa
 
 		inteiro a,b,c,d,r,s
 		separador()
+
+		// input 
 		escreva(" digite o valor de a ")
 		leia(a)
 		separador()
@@ -34,7 +36,7 @@ programa
 
 		limpa()
 
-	// processamento
+		// processamento
 		
 		r = (a + b)^2
 		s = (b + c)^2
@@ -60,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 13; 
+ * @POSICAO-CURSOR = 587; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
