@@ -1,6 +1,6 @@
 programa
 {
-
+	inclua biblioteca Matematica --> mat  // Inclui a biblioteca Matemática, para usar métodos de raiz, potencia e derivados	
 	
 	funcao pularLinha() // função para pular a linha durante a escrita 
 	{   
@@ -38,8 +38,8 @@ programa
 
 		// processamento
 		
-		r = (a + b)^2
-		s = (b + c)^2
+		r = mat.potencia((a + b), 2 ) 
+		s = mat.potencia((b + c), 2 )
 		d =  (r+s)/2
 
 		// retorno final
@@ -62,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 587; 
+ * @POSICAO-CURSOR = 728; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
