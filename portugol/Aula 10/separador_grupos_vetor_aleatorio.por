@@ -55,6 +55,37 @@ programa
 		caracter resposta 
 		inteiro contador = 0
 		inteiro pessoas = 0
+		inteiro randomiza [LIMITE]
+		logico teste = verdadeiro
+		inteiro y = 0
+		inteiro contRandom = 0
+		inteiro imprima = 0
+
+		para (x = 0; x <LIMITE; x++)
+		{
+			
+			faca{
+				randomiza [x] = Util.sorteia(0, 38)
+			teste = verdadeiro
+				contRandom = 0
+				para (y = 0; y < LIMITE; y++)
+				{
+					se (randomiza [y] == randomiza [x])
+					
+					{
+						contRandom++
+						se(contRandom >1)
+						{
+							teste = falso
+						}
+					}
+				}
+				
+			} enquanto (teste == falso)
+			escreva ("[ ",randomiza [x]," ]")		
+			
+		}
+		pularLinha()
 
 		para (x = 0; x < LIMITE; x++)
 		{
@@ -92,20 +123,18 @@ programa
 					} enquanto (grupoUsuario > (LIMITE/2)+1)
 				para (x = 0 ; x < LIMITE; x+=pessoas)
 				{
-					para (inteiro y = 0; y < pessoas;y++)
+					para ( y = 0; y < pessoas;y++)
 					{
 						se (contador < LIMITE){
-							escreva ("grupo : ",grupo,"\t Alunx: ",lista[contador])
+							imprima = randomiza[contador]
+							escreva ("matricula:",imprima+1,"\tgrupo : ",grupo,"\t Alunx: ",lista[imprima])
 							contador++
 							pularLinha()
-						}
-						
+						}						
 					}
 					grupo++
 					pularLinha()
-				}
-			
-				
+				}		
 		
 			}
 		} 
@@ -115,7 +144,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2296; 
+ * @POSICAO-CURSOR = 3086; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
