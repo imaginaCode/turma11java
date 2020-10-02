@@ -70,7 +70,7 @@ programa
 			
 			faca{
 				randomiza [x] = Util.sorteia(0, 38)
-			teste = verdadeiro
+				teste = verdadeiro
 				contRandom = 0
 				para (y = 0; y < LIMITE; y++)
 				{
@@ -147,7 +147,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2031; 
+ * @POSICAO-CURSOR = 1766; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
