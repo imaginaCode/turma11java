@@ -60,7 +60,11 @@ programa
 		inteiro y = 0
 		inteiro contRandom = 0
 		inteiro imprima = 0
-
+		
+		para (x = 0; x < LIMITE; x++)
+		{
+			randomiza[x] = x+100
+		}
 		para (x = 0; x <LIMITE; x++)
 		{
 			
@@ -82,7 +86,7 @@ programa
 				}
 				
 			} enquanto (teste == falso)
-			escreva ("[ ",randomiza [x]," ]")		
+			//escreva ("[ ",randomiza [x]," ]")	// imprime o log do vetor random	
 			
 		}
 		pularLinha()
@@ -101,50 +105,49 @@ programa
 		}
 
 		
-			escreva ("quer separar em grupos  sim'S', para o programa nao'N'")
-			leia (resposta)
+		escreva ("quer separar em grupos  sim'S', para o programa nao'N'")
+		leia (resposta)
 
-			se (resposta == 'S' ou resposta == 's')
-			{
-				limpa()
-				faca
-					{
-					escreva ("O numero de pessoas por para ser divido")
-					leia(pessoas)
-					//escreva ("\n ",LIMITE%pessoas,"\n")
-					se (LIMITE%pessoas == 0)
-					{
-						grupoUsuario = LIMITE/pessoas
-					}senao
-					{
-						grupoUsuario = (LIMITE/pessoas)+1
-					}
-					escreva ("\n ",grupoUsuario,"\n")
-					} enquanto (grupoUsuario > (LIMITE/2)+1)
-				para (x = 0 ; x < LIMITE; x+=pessoas)
+		se (resposta == 'S' ou resposta == 's')
+		{
+			limpa()
+			faca
 				{
-					para ( y = 0; y < pessoas;y++)
-					{
-						se (contador < LIMITE){
-							imprima = randomiza[contador]
-							escreva ("matricula:",imprima+1,"\tgrupo : ",grupo,"\t Alunx: ",lista[imprima])
-							contador++
-							pularLinha()
-						}						
-					}
-					grupo++
-					pularLinha()
-				}		
-		
-			}
-		} 
+				escreva ("O numero de pessoas por para ser divido")
+				leia(pessoas)				
+				se (LIMITE%pessoas == 0)
+				{
+					grupoUsuario = LIMITE/pessoas
+				}senao
+				{
+					grupoUsuario = (LIMITE/pessoas)+1
+				}
+				//escreva ("\n ",grupoUsuario,"\n")  // log de grupos
+				} enquanto (grupoUsuario > (LIMITE/2)+1)
+			para (x = 0 ; x < LIMITE; x+=pessoas)
+			{
+				para ( y = 0; y < pessoas;y++)
+				{
+					se (contador < LIMITE){
+						imprima = randomiza[contador]
+						escreva ("matricula:",imprima+1,"\tgrupo : ",grupo,"\t Alunx: ",lista[imprima])
+						contador++
+						pularLinha()
+					}						
+				}
+				grupo++
+				pularLinha()
+			}		
+	
+		}
+	} 
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3086; 
+ * @POSICAO-CURSOR = 2031; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
