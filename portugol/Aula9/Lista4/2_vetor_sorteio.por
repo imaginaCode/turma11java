@@ -18,7 +18,7 @@ programa
 		para (inteiro x = 0; x < limite ; x++)
 		{
 			gerado[x] = util.sorteia(1, 6)
-			escreva("O primeiro " ,x+1,"º numero gerado é :",gerado[x]," \n")
+			escreva("O " ,x+1,"º numero gerado é :",gerado[x]," \n")
 			geradoSoma += gerado[x]
 			se (gerado[x] == geradoMaior)
 			{
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 863; 
+ * @POSICAO-CURSOR = 597; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

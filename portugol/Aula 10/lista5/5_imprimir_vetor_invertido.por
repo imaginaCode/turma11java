@@ -22,10 +22,11 @@ programa
 		para (x = 0; x < 5; x++)
 		{
 			escreva(" Digite a ",x+1,"º para o vetor : ")
-			//vetor [x] = x+1
+			vetor [x] = x+1
 			//vetor[x] = Util.sorteia(0, 100)
-			pula()
-			leia(vetor[x])			
+			
+			//leia(vetor[x])	
+			pula()		
 			
 		}
 		limpa ()
@@ -54,6 +55,7 @@ programa
 			
 			
 		}
+		escreva ("Código inválido")
 			
 	
 		
@@ -64,9 +66,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 502; 
+ * @POSICAO-CURSOR = 467; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {vetor, 18, 7, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
