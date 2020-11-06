@@ -28,10 +28,21 @@ public class ManutencaoTable {
 
 	@Column
 	@JsonFormat(pattern = "yyyy-mm-dd")
-	private Date date;
+	private Date data;
 
 	@Column
 	private boolean pago;
+	
+	@Column
+	private String categoria;
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
 
 	public Long getId() {
 		return id;
@@ -50,11 +61,11 @@ public class ManutencaoTable {
 	}
 
 	public Date getDate() {
-		return date;
+		return data;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate(Date data) {
+		this.data = data;
 	}
 
 	public boolean isPago() {
