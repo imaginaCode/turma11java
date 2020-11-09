@@ -26,7 +26,7 @@ public class Tema {
 	@Column
 	private String descricao;
 	
-	@Column
+	
 	@OneToMany(mappedBy = "tema",cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;

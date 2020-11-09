@@ -45,6 +45,26 @@ public class PostagemController {
 		return ResponseEntity.ok(repositoty.findAllByTituloContainingIgnoreCase(titulo));
 	}
 	
+	@GetMapping(value = "/maior")
+	public ResponseEntity<List<Postagem>> findAllMaior(){
+		return  ResponseEntity.ok(repositoty.findAllMaior());
+	}
+	@GetMapping(value = "/ordem/desc")
+	public ResponseEntity<List<Postagem>> anosDesc(){
+		return  ResponseEntity.ok(repositoty.anosDesc());
+	}
+	
+	@GetMapping(value = "/intervalo")
+	public ResponseEntity<List<Postagem>> anosIntervalos(){
+		return  ResponseEntity.ok(repositoty.anosIntervalos());
+	}
+	
+	@GetMapping(value = "/ordem/asc")
+	public ResponseEntity<List<Postagem>> anosAsc(){
+		return  ResponseEntity.ok(repositoty.anosAsc());
+	}
+	
+	
 	@PostMapping
 	public ResponseEntity<Postagem> post (@RequestBody Postagem postagem){
 		

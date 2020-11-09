@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
-@Table(name = "tb_manutencao")
+@Table(name = "tb_manutencao_crud")
 public class ManutencaoTable {
 
 	// Atributos
@@ -60,11 +60,11 @@ public class ManutencaoTable {
 		this.nome = nome;
 	}
 
-	public Date getDate() {
+	public Date getData() {
 		return data;
 	}
 
-	public void setDate(Date data) {
+	public void setData(Date data) {
 		this.data = data;
 	}
 
