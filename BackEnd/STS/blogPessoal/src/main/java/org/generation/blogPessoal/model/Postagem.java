@@ -16,7 +16,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "postagem")
@@ -42,7 +42,7 @@ public class Postagem {
 	private Date date = new java.sql.Date(System.currentTimeMillis());
 	
 	@ManyToOne
-	@JsonIgnoreProperties("postagem")
+	@JsonIgnore
 	private Tema tema;
 	
 	@NotNull
